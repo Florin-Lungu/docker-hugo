@@ -12,27 +12,27 @@ These images sets `bind` when started as server, otherwise no magic.
 
 Default minimal image based upon [Busybox](https://hub.docker.com/r/_/busybox/):
 * Aliases: `latest`, `busybox`, `busybox-ci`, `ci`, `busybox-onbuild`, `onbuild`
-* Hugo 0.153.4: `0.153.4-busybox`, `0.153.4`, `0.153.4-busybox-ci`, `0.153.4-ci`, `0.153.4-busybox-onbuild`, `0.153.4-onbuild`
+* Hugo 0.153.5: `0.153.5-busybox`, `0.153.5`, `0.153.5-busybox-ci`, `0.153.5-ci`, `0.153.5-busybox-onbuild`, `0.153.5-onbuild`
 
 Minimal image based upon [Alpine](https://hub.docker.com/r/_/alpine/):
 * Aliases: `alpine`, `alpine-ci`, `alpine-onbuild`, `ext-alpine`, `ext-alpine-ci`, `ext-alpine-onbuild`
-* Hugo 0.153.4: `0.153.4-alpine`, `0.153.4-alpine-ci`, `0.153.4-alpine-onbuild`, `0.153.4-ext-alpine`, `0.153.4-ext-alpine-ci`, `0.153.4-ext-alpine-onbuild`
+* Hugo 0.153.5: `0.153.5-alpine`, `0.153.5-alpine-ci`, `0.153.5-alpine-onbuild`, `0.153.5-ext-alpine`, `0.153.5-ext-alpine-ci`, `0.153.5-ext-alpine-onbuild`
 
 Minimal image based upon [Alpine](https://hub.docker.com/r/_/alpine/) with [Asciidoctor](http://asciidoctor.org/) installed:
 * Aliases: `asciidoctor`, `asciidoctor-ci`, `asciidoctor-onbuild`, `ext-asciidoctor`, `ext-asciidoctor-ci`, `ext-asciidoctor-onbuild`
-* Hugo 0.153.4: `0.153.4-asciidoctor`, `0.153.4-asciidoctor-onbuild`, `0.153.4-asciidoctor-ci`, `0.153.4-ext-asciidoctor`, `0.153.4-ext-asciidoctor-ci`, `0.153.4-ext-asciidoctor-onbuild`
+* Hugo 0.153.5: `0.153.5-asciidoctor`, `0.153.5-asciidoctor-onbuild`, `0.153.5-asciidoctor-ci`, `0.153.5-ext-asciidoctor`, `0.153.5-ext-asciidoctor-ci`, `0.153.5-ext-asciidoctor-onbuild`
 
 Minimal image based upon [Alpine](https://hub.docker.com/r/_/alpine/) with [Pandoc](https://pandoc.org/) installed:
 * Aliases: `pandoc`, `pandoc-ci`, `pandoc-onbuild`, `ext-pandoc`, `ext-pandoc-ci`, `ext-pandoc-onbuild`
-* Hugo 0.153.4: `0.153.4-pandoc`, `0.153.4-pandoc-ci`, `0.153.4-pandoc-onbuild`, `0.153.4-ext-pandoc`, `0.153.4-ext-pandoc-ci`, `0.153.4-ext-pandoc-onbuild`
+* Hugo 0.153.5: `0.153.5-pandoc`, `0.153.5-pandoc-ci`, `0.153.5-pandoc-onbuild`, `0.153.5-ext-pandoc`, `0.153.5-ext-pandoc-ci`, `0.153.5-ext-pandoc-onbuild`
 
 Image based upon [Debian](https://hub.docker.com/r/_/debian/):
 * Aliases: `debian`, `debian-ci`, `debian-onbuild`, `ext`, `latest-ext`, `ext-debian`, `ext-debian-ci`, `ext-ci`, `ext-debian-onbuild`, `ext-onbuild`
-* Hugo 0.153.4: `0.153.4-debian`, `0.153.4-debian-ci`, `0.153.4-debian-onbuild`, `0.153.4-ext`, `0.153.4-ext-debian`, `0.153.4-ext-debian-ci`, `0.153.4-ext-ci`,`0.153.4-ext-debian-onbuild`, `0.153.4-ext-onbuild`
+* Hugo 0.153.5: `0.153.5-debian`, `0.153.5-debian-ci`, `0.153.5-debian-onbuild`, `0.153.5-ext`, `0.153.5-ext-debian`, `0.153.5-ext-debian-ci`, `0.153.5-ext-ci`,`0.153.5-ext-debian-onbuild`, `0.153.5-ext-onbuild`
 
 Image based upon [Ubuntu](https://hub.docker.com/r/_/ubuntu/):
 * Aliases: `ubuntu`, `ubuntu-ci`, `ubuntu-onbuild`, `ext-ubuntu`, `ext-ubuntu-ci`, `ext-ubuntu-onbuild`
-* Hugo 0.153.4: `0.153.4-ubuntu`, `0.153.4-ubuntu-ci`, `0.153.4-ubuntu-onbuild`, `0.153.4-ext-ubuntu`, `0.153.4-ext-ubuntu-ci`, `0.153.4-ext-ubuntu-onbuild`
+* Hugo 0.153.5: `0.153.5-ubuntu`, `0.153.5-ubuntu-ci`, `0.153.5-ubuntu-onbuild`, `0.153.5-ext-ubuntu`, `0.153.5-ext-ubuntu-ci`, `0.153.5-ext-ubuntu-onbuild`
 
 *Looking for older tags? Please see the [complete list of tags](https://github.com/floryn90/docker-hugo/blob/master/doc/tags.md).*
 
@@ -50,7 +50,7 @@ Normal build:
 ```shell
 docker run --rm -it \
   -v $(pwd):/src \
-  floryn90/hugo:0.153.4
+  floryn90/hugo:0.153.5
 ```
 
 Run server:
@@ -59,7 +59,7 @@ Run server:
 docker run --rm -it \
   -v $(pwd):/src \
   -p 1313:1313 \
-  floryn90/hugo:0.153.4 \
+  floryn90/hugo:0.153.5 \
   server
 ```
 
@@ -70,7 +70,7 @@ Normal build:
 
 ```yaml
   build:
-    image: floryn90/hugo:0.153.4
+    image: floryn90/hugo:0.153.5
     volumes:
       - ".:/src"
 ```
@@ -79,7 +79,7 @@ Run server:
 
 ```yaml
   server:
-    image: floryn90/hugo:0.153.4
+    image: floryn90/hugo:0.153.5
     command: server
     volumes:
       - ".:/src"
@@ -126,7 +126,7 @@ services:
 script:
 - docker run --rm -i \
     -v $(pwd):/src \
-    floryn90/hugo:0.153.4
+    floryn90/hugo:0.153.5
 ```
 
 The `bash` environment is used for faster loading before Travis is ready to trigger Docker.
@@ -142,7 +142,7 @@ To get into a shell for your site:
 ```shell
 docker run --rm -it \
   -v $(pwd):/src \
-  floryn90/hugo:0.153.4-alpine \
+  floryn90/hugo:0.153.5-alpine \
   shell
 ```
 
@@ -175,7 +175,7 @@ The onbuild images adds content of the folder of your Dockerfile into `/src` and
 Example Dockerfile for your project where the site is made into an nginx image (Docker 17.05-ce or newer):
 
 ```Dockerfile
-FROM floryn90/hugo:0.153.4-onbuild AS hugo
+FROM floryn90/hugo:0.153.5-onbuild AS hugo
 
 FROM nginx
 COPY --from=hugo /target /usr/share/nginx/html
@@ -212,7 +212,7 @@ Example of explicit setting `pandoc` alias:
 docker run --rm -it \
   -v $(pwd):/src \
   -e HUGO_PANDOC="pandoc-default --strip-empty-paragraphs" \
-  floryn90/hugo:0.153.4-pandoc
+  floryn90/hugo:0.153.5-pandoc
 ```
 
 
@@ -228,14 +228,14 @@ On command line using `--entrypoint`:
 docker run --rm -it \
   -v $(pwd):/src \
   --entrypoint hugo-official \
-  floryn90/hugo:0.153.4
+  floryn90/hugo:0.153.5
 ```
 
 In docker-compose using `entrypoint`:
 
 ```yaml
   build:
-    image: floryn90/hugo:0.153.4
+    image: floryn90/hugo:0.153.5
     entrypoint: hugo-official
     volumes:
       - ".:/src"
