@@ -15,7 +15,7 @@
 
 ## :heartbeat: Updates
 
-* Hugo: [`0.154.3`](https://github.com/floryn90/docker-hugo/releases/tag/0.154.3) => `NEXT`
+* Hugo: [`0.154.4`](https://github.com/floryn90/docker-hugo/releases/tag/0.154.4) => `NEXT`
 
 
 ## Docker images
