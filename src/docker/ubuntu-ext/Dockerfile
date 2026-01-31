@@ -61,6 +61,7 @@ RUN true \
  #
  #
  # Cleaning up
+ && apt full-upgrade -y \
  && apt remove -y curl gnupg apt-transport-https lsb-release python3-pip python3-setuptools python3-wheel \
  && apt autoremove -y \
  && rm -rf /var/lib/apt/lists/* \
