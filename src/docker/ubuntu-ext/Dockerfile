@@ -85,6 +85,17 @@ RUN git config --global --add safe.directory /src \
 
 IMPORT ../_imports/onbuild.df
 
+USER root
+RUN true \
+    # Update packaages
+    && apt update \
+    && apt -y autoremove \
+    && apt -y full-upgrade \
+    # Cleaning up
+    && apt autoremove -y \
+    && rm -rf /var/lib/apt/lists/* \
+    && find /tmp -mindepth 1 -maxdepth 1 | xargs rm -rf 
+
 RUN git config --global --add safe.directory /src \
  && git config --global --add safe.directory /builds
 
