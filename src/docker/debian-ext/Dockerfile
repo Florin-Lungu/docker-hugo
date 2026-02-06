@@ -58,6 +58,8 @@ RUN true \
 # && curl -sL https://deb.nodesource.com/setup_20.x | bash - \
 # && apt install -y nodejs \
  && npm install -g autoprefixer postcss postcss-cli yarn @babel/cli @babel/core @fullhuman/postcss-purgecss \
+ && npx npm-check-updates -g \
+ && npm update -g \ 
  #
  #
  # Cleaning up

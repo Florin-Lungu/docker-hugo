@@ -1,4 +1,5 @@
 name: Docker Image release
+run-name: Release for ${{ github.ref }}
 
 on:
   release:
@@ -13,6 +14,7 @@ on:
 
 jobs:
   BuildImages:
+    name: Build and release Docker images for ${{ github.ref }}
     runs-on: ubuntu-latest
     permissions:
       id-token: write
