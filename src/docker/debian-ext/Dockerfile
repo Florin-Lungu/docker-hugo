@@ -59,7 +59,7 @@ RUN true \
 # && apt install -y nodejs \
  && npm install -g autoprefixer postcss postcss-cli yarn @babel/cli @babel/core @fullhuman/postcss-purgecss \
  && npx npm-check-updates -g \
- && npm install -g \ 
+ && npm update -g \ 
  #
  #
  # Cleaning up
