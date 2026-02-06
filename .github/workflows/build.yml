@@ -25,6 +25,7 @@ permissions:
 
 jobs:
   build:
+    name: Test build for ${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
 

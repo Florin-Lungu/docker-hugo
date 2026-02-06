@@ -14,6 +14,7 @@ on:
 
 jobs:
   BuildImages:
+    name: Build and release Docker images for ${{ github.ref }}
     runs-on: ubuntu-latest
     permissions:
       id-token: write
