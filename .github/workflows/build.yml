@@ -1,4 +1,5 @@
 name: Docker Image build CI
+run-name: Test build for ${{ github.ref }}
 
 on:
   pull_request:
