@@ -3,6 +3,7 @@
 Default minimal image based upon [Busybox](https://hub.docker.com/r/_/busybox/):
 * Aliases: `latest`, `busybox`, `busybox-ci`, `ci`, `busybox-onbuild`, `onbuild`
 <!-- * Hugo NEXT: `NEXT-busybox`, `NEXT`, `NEXT-busybox-ci`, `NEXT-ci`, `NEXT-busybox-onbuild`, `NEXT-onbuild` -->
+* Hugo 0.159.1: `0.159.1-busybox`, `0.159.1`, `0.159.1-busybox-ci`, `0.159.1-ci`, `0.159.1-busybox-onbuild`, `0.159.1-onbuild`
 * Hugo 0.159.0: `0.159.0-busybox`, `0.159.0`, `0.159.0-busybox-ci`, `0.159.0-ci`, `0.159.0-busybox-onbuild`, `0.159.0-onbuild`
 * Hugo 0.158.0: `0.158.0-busybox`, `0.158.0`, `0.158.0-busybox-ci`, `0.158.0-ci`, `0.158.0-busybox-onbuild`, `0.158.0-onbuild`
 * Hugo 0.157.0: `0.157.0-busybox`, `0.157.0`, `0.157.0-busybox-ci`, `0.157.0-ci`, `0.157.0-busybox-onbuild`, `0.157.0-onbuild`
@@ -181,6 +182,7 @@ Default minimal image based upon [Busybox](https://hub.docker.com/r/_/busybox/):
 Minimal image based upon [Alpine](https://hub.docker.com/r/_/alpine/):
 * Aliases: `alpine`, `alpine-ci`, `alpine-onbuild`, `ext-alpine`, `ext-alpine-ci`, `ext-alpine-onbuild`
 <!-- * Hugo NEXT: `NEXT-alpine`, `NEXT-alpine-ci`, `NEXT-alpine-onbuild`, `NEXT-ext-alpine`, `NEXT-ext-alpine-ci`, `NEXT-ext-alpine-onbuild` -->
+* Hugo 0.159.1: `0.159.1-alpine`, `0.159.1-alpine-ci`, `0.159.1-alpine-onbuild`, `0.159.1-ext-alpine`, `0.159.1-ext-alpine-ci`, `0.159.1-ext-alpine-onbuild`
 * Hugo 0.159.0: `0.159.0-alpine`, `0.159.0-alpine-ci`, `0.159.0-alpine-onbuild`, `0.159.0-ext-alpine`, `0.159.0-ext-alpine-ci`, `0.159.0-ext-alpine-onbuild`
 * Hugo 0.158.0: `0.158.0-alpine`, `0.158.0-alpine-ci`, `0.158.0-alpine-onbuild`, `0.158.0-ext-alpine`, `0.158.0-ext-alpine-ci`, `0.158.0-ext-alpine-onbuild`
 * Hugo 0.157.0: `0.157.0-alpine`, `0.157.0-alpine-ci`, `0.157.0-alpine-onbuild`, `0.157.0-ext-alpine`, `0.157.0-ext-alpine-ci`, `0.157.0-ext-alpine-onbuild`
