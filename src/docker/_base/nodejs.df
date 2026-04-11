@@ -29,6 +29,8 @@
 
 # Use the official Node.js Alpine image as the first stage
 FROM node:current-alpine AS node-base
+RUN apk -U upgrade && npm update -g \
+ && find /tmp -mindepth 1 -maxdepth 1 | xargs rm -rf
 
 # Initialize the second stage with your custom image
 FROM scratch AS musl
