@@ -8,7 +8,8 @@ RUN apk -U upgrade && apk --no-cache add asciidoctor jq \
  && gem install coderay --no-document \
  && find /tmp -mindepth 1 -maxdepth 1 | xargs rm -rf \
  && mkdir -p /src /target /builds \
- && chown -R hugo:hugo /src /target /builds /home/hugo \
+ && chown hugo:hugo /src /target /builds \
+ && chown -R hugo:hugo /home/hugo \
  && chmod -R a+rwx /src /target /builds
 
  VOLUME [ "/src", "/target", "/builds" ]

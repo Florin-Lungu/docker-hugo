@@ -47,7 +47,8 @@ RUN true \
  #
  # Prepare folders
  && mkdir -p /src /target /builds \
- && chown -R hugo:hugo /src /target /builds /home/hugo /usr/local/lib/node_modules \
+ && chown hugo:hugo /src /target /builds \
+ && chown -R hugo:hugo /home/hugo /usr/local/lib/node_modules \
  && chmod a+wrx /src /target /builds \
  #
  # add /src to safe.directory

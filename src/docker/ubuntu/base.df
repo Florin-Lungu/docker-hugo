@@ -19,7 +19,8 @@ RUN apt update \
  && rm -rf /var/lib/apt/lists/* \
  && find /tmp -mindepth 1 -maxdepth 1 | xargs rm -rf \
  && mkdir -p /src /target /builds \
- && chown -R hugo:hugo /src /target /builds /home/hugo \
+ && chown hugo:hugo /src /target /builds \
+ && chown -R hugo:hugo /home/hugo \
  && chmod a+wrx /src /target /builds
 
 VOLUME [ "/src", "/target", "/builds" ]
