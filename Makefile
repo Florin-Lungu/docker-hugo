@@ -29,9 +29,9 @@ prepare: src/bin/buildx
         klakegg/docker-project-prepare:edge \
         -t target/bundle ) || \
     ( echo "Prepar­er failed on both platforms. If you are on Apple Silicon run: sudo make enable-qemu && make prepare"; exit 1 )
-	@sed -i "s:DOCKER_CLI_EXPERIMENTAL=enabled docker buildx:buildx:g" target/bundle/Makefile
-#	@sed -i 's:--progress plain \\:--progress plain \\\n                --annotation $(DOCKER_METADATA_OUTPUT_ANNOTATIONS) \\:g' target/bundle/Makefile
-	@sed -i "s:--push:--provenance=true --sbom=true --push:g" target/bundle/Makefile
+	@sed -i '' "s:DOCKER_CLI_EXPERIMENTAL=enabled docker buildx:buildx:g" target/bundle/Makefile
+#	@sed -i '' 's:--progress plain \\:--progress plain \\\n                --annotation $(DOCKER_METADATA_OUTPUT_ANNOTATIONS) \\:g' target/bundle/Makefile
+	@sed -i '' "s:--push:--provenance=true --sbom=true --push:g" target/bundle/Makefile
 
 test: test-docsy test-docuapi
 
