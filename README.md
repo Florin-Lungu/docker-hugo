@@ -247,9 +247,11 @@ In docker-compose using `entrypoint`:
 | Software | Version |
 | -------- | ------- |
 | Go       | 1.20.1  |
-| NodeJS   | 19.x    |
+| NodeJS   | 26.x    |
 | Pandoc   | 3.1     |
-| Yarn     | 1.58.3  |
+| Yarn     | 2.x+ (via corepack)¹ |
+
+¹ **Note**: Yarn v1 is deprecated and no longer available in Node.js images. Yarn v2+ is available via [corepack](https://nodejs.org/api/corepack.html), which is the Node.js package manager manager. Use `corepack enable yarn` to use yarn v2+ in the images.
 
 
 ## Configuration
