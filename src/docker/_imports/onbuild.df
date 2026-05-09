@@ -10,10 +10,10 @@ ONBUILD ENV HUGO_DESTINATION="${HUGO_DESTINATION_ARG:-/target}" \
             HUGO_ENV="${HUGO_ENV_ARG:-DEV}" \
             ONBUILD_SCRIPT_VALUE="${ONBUILD_SCRIPT:-.hugo-onbuild.sh}"
 
-ONBUILD COPY . ${HUGO_DIR:-/src}
+ONBUILD COPY --chown=hugo:hugo . ${HUGO_DIR:-/src}
 ONBUILD WORKDIR ${HUGO_DIR:-/src}
 ONBUILD USER root
-ONBUILD RUN chown -R hugo:hugo ${HUGO_DIR:-/src} ${HUGO_DESTINATION:-/target} /builds
+ONBUILD RUN chown hugo:hugo ${HUGO_DESTINATION:-/target} /builds
 ONBUILD USER hugo
 USER hugo
 ONBUILD RUN if [ -e "$ONBUILD_SCRIPT_VALUE" ]; then exec sh $ONBUILD_SCRIPT_VALUE; else exec hugo $HUGO_CMD; fi

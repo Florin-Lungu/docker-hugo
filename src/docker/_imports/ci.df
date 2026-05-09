@@ -1,7 +1,7 @@
 FROM main AS ci
 USER root
 ENV HUGO_ENV="production"
-RUN chown -R hugo:hugo /src /target /builds
+RUN chown hugo:hugo /src /target /builds
 COPY ../_script/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
