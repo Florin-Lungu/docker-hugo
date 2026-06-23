@@ -74,7 +74,6 @@ src/bin/buildx:
 		*) PLAT=linux-$$A ;; \
 	esac; \
 	URL="https://github.com/docker/buildx/releases/download/$$TAG/buildx-$$TAG.$$PLAT"; \
-	echo "Downloading $$URL"; \
 	curl -sL -o src/bin/buildx $$URL; \
 	chmod a+x src/bin/buildx
 	@docker buildx create --use || true
