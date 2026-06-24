@@ -1,7 +1,7 @@
 # Hugo
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/floryn90/hugo.svg)](https://store.docker.com/community/images/floryn90/hugo)
-[![Docker build](https://github.com/floryn90/docker-hugo/actions/workflows/build.yml/badge.svg)](https://github.com/floryn90/docker-hugo/actions/workflows/build.yml)
+[![Docker build](https://github.com/Florin-Lungu/docker-hugo/actions/workflows/build.yml/badge.svg)](https://github.com/Florin-Lungu/docker-hugo/actions/workflows/build.yml)
 
 
 Truly minimal Docker images for [Hugo](http://gohugo.io/) with batteries included.
@@ -34,7 +34,7 @@ Image based upon [Ubuntu](https://hub.docker.com/r/_/ubuntu/):
 * Aliases: `ubuntu`, `ubuntu-ci`, `ubuntu-onbuild`, `ext-ubuntu`, `ext-ubuntu-ci`, `ext-ubuntu-onbuild`
 * Hugo NEXT: `NEXT-ubuntu`, `NEXT-ubuntu-ci`, `NEXT-ubuntu-onbuild`, `NEXT-ext-ubuntu`, `NEXT-ext-ubuntu-ci`, `NEXT-ext-ubuntu-onbuild`
 
-*Looking for older tags? Please see the [complete list of tags](https://github.com/floryn90/docker-hugo/blob/master/doc/tags.md).*
+*Looking for older tags? Please see the [complete list of tags](https://github.com/Florin-Lungu/docker-hugo/blob/master/doc/tags.md).*
 
 
 ## Using image
