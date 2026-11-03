@@ -7,6 +7,8 @@
 Truly minimal Docker images for [Hugo](http://gohugo.io/) with batteries included.
 These images sets `bind` when started as server, otherwise no magic.
 
+For the repository layout, image build design, local development, and release process, see the [project guide](doc/project.md).
+
 
 ## Latest tags
 
