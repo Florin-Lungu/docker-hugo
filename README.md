@@ -26,6 +26,10 @@ Minimal image based upon [Alpine](https://hub.docker.com/r/_/alpine/) with [Pand
 * Aliases: `pandoc`, `pandoc-ci`, `pandoc-onbuild`, `ext-pandoc`, `ext-pandoc-ci`, `ext-pandoc-onbuild`
 * Hugo 0.170.1: `0.170.1-pandoc`, `0.170.1-pandoc-ci`, `0.170.1-pandoc-onbuild`, `0.170.1-ext-pandoc`, `0.170.1-ext-pandoc-ci`, `0.170.1-ext-pandoc-onbuild`
 
+Image based upon [Debian](https://hub.docker.com/r/_/debian/) with Dart Sass Embedded installed:
+* Aliases: `sass`, `sass-ci`, `sass-onbuild`
+* Hugo 0.170.1: `0.170.1-sass`, `0.170.1-sass-ci`, `0.170.1-sass-onbuild`
+
 Image based upon [Debian](https://hub.docker.com/r/_/debian/):
 * Aliases: `debian`, `debian-ci`, `debian-onbuild`, `ext`, `latest-ext`, `ext-debian`, `ext-debian-ci`, `ext-ci`, `ext-debian-onbuild`, `ext-onbuild`
 * Hugo 0.170.1: `0.170.1-debian`, `0.170.1-debian-ci`, `0.170.1-debian-onbuild`, `0.170.1-ext`, `0.170.1-ext-debian`, `0.170.1-ext-debian-ci`, `0.170.1-ext-ci`,`0.170.1-ext-debian-onbuild`, `0.170.1-ext-onbuild`
@@ -41,6 +45,18 @@ Image based upon [Ubuntu](https://hub.docker.com/r/_/ubuntu/):
 
 This image does not try to do any fancy.
 Users may use Hugo [just as they are used to](https://gohugo.io/documentation/).
+
+### Sass support
+
+Hugo 0.170.0 and later require Dart Sass Embedded to build Sass stylesheets. Use the Debian-based Sass image, which includes the `sass` executable:
+
+```shell
+docker run --rm -it \
+  -v $(pwd):/src \
+  floryn90/hugo:0.170.1-sass
+```
+
+The `sass-ci` and `sass-onbuild` tags are also available.
 
 
 ### Command line

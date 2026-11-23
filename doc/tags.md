@@ -198,6 +198,11 @@ Default minimal image based upon [Busybox](https://hub.docker.com/r/_/busybox/):
 * Hugo 0.100.0: `0.100.0-busybox`, `0.100.0`, `0.100.0-busybox-ci`, `0.100.0-ci`, `0.100.0-busybox-onbuild`, `0.100.0-onbuild`
 * Hugo 0.99.1: `0.99.1-busybox`, `0.99.1`, `0.99.1-busybox-ci`, `0.99.1-ci`, `0.99.1-busybox-onbuild`, `0.99.1-onbuild`
 
+Image based upon [Debian](https://hub.docker.com/r/_/debian/) with Dart Sass Embedded installed:
+* Aliases: `sass`, `sass-ci`, `sass-onbuild`
+<!-- * Hugo NEXT: `NEXT-sass`, `NEXT-sass-ci`, `NEXT-sass-onbuild` -->
+* Hugo 0.170.1: `0.170.1-sass`, `0.170.1-sass-ci`, `0.170.1-sass-onbuild`
+
 Minimal image based upon [Alpine](https://hub.docker.com/r/_/alpine/):
 * Aliases: `alpine`, `alpine-ci`, `alpine-onbuild`, `ext-alpine`, `ext-alpine-ci`, `ext-alpine-onbuild`
 <!-- * Hugo NEXT: `NEXT-alpine`, `NEXT-alpine-ci`, `NEXT-alpine-onbuild`, `NEXT-ext-alpine`, `NEXT-ext-alpine-ci`, `NEXT-ext-alpine-onbuild` -->
@@ -395,4 +400,3 @@ Minimal image based upon [Alpine](https://hub.docker.com/r/_/alpine/):
 * Hugo 0.100.1: `0.100.1-alpine`, `0.100.1-alpine-ci`, `0.100.1-alpine-onbuild`, `0.100.1-ext-alpine`, `0.100.1-ext-alpine-ci`, `0.100.1-ext-alpine-onbuild`
 * Hugo 0.100.0: `0.100.0-alpine`, `0.100.0-alpine-ci`, `0.100.0-alpine-onbuild`, `0.100.0-ext-alpine`, `0.100.0-ext-alpine-ci`, `0.100.0-ext-alpine-onbuild`
 * Hugo 0.99.1: `0.99.1-alpine`, `0.99.1-alpine-ci`, `0.99.1-alpine-onbuild`, `0.99.1-ext-alpine`, `0.99.1-ext-alpine-ci`, `0.99.1-ext-alpine-onbuild`
-

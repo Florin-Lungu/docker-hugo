@@ -1,0 +1,50 @@
+name: Sass
+
+images:
+  sass:
+    target: sass
+    edge: true
+    alias:
+      - $(VERSION)-sass
+    platforms:
+      - linux/amd64
+      - linux/arm64
+    tests:
+      - hugo
+      - sass
+      - defaultuser
+
+  sass-ci:
+    target: sass--ci
+    alias:
+      - $(VERSION)-sass-ci
+    platforms:
+      - linux/amd64
+      - linux/arm64
+    tests:
+      - defaultuser
+
+  sass-onbuild:
+    target: sass--onbuild
+    alias:
+      - $(VERSION)-sass-onbuild
+    platforms:
+      - linux/amd64
+      - linux/arm64
+    tests:
+      - defaultuser
+
+tests:
+  hugo:
+    command: version
+    expected: hugo
+
+  sass:
+    entrypoint: sass
+    command: --embedded --version
+    expected: compilerVersion
+
+  defaultuser:
+    entrypoint: id
+    command: -u
+    expected: "1234"
