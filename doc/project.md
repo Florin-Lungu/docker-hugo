@@ -18,6 +18,7 @@ The image catalog is declared in the YAML files in [`src/config/`](../src/config
 | Ubuntu | standard, `ci`, `onbuild` | Hugo on Ubuntu. |
 | Alpine with Asciidoctor | standard, `ci`, `onbuild` | Alpine Hugo image with Asciidoctor available. |
 | Alpine with Pandoc | standard, `ci`, `onbuild` | Alpine Hugo image with Pandoc available. |
+| Sass | Debian standard, `ci`, `onbuild` | Hugo with the Dart Sass Embedded compiler preinstalled. |
 | Extended editions | Alpine, Debian, Ubuntu; each with `ci` and `onbuild` variants | Hugo Extended plus the additional site-building tools described below. |
 
 The modifiers have consistent intent across families:
@@ -43,6 +44,7 @@ Tags follow the configured Hugo version, with aliases declared beside each image
 | [`src/docker/alpine/`](../src/docker/alpine/) | Alpine standard image targets. |
 | [`src/docker/alpine-ext/`](../src/docker/alpine-ext/) | Alpine extended and optional Asciidoctor/Pandoc targets. |
 | [`src/docker/busybox/`](../src/docker/busybox/) | BusyBox image definition. |
+| [`src/docker/sass/`](../src/docker/sass/) | Debian-based Hugo images with Dart Sass Embedded. |
 | [`src/docker/debian/`](../src/docker/debian/) and [`src/docker/ubuntu/`](../src/docker/ubuntu/) | Debian and Ubuntu image targets. |
 | [`src/files/`](../src/files/) | Files assembled into images, including Hugo/Pandoc wrappers, profile setup, and build-time acquisition scripts. |
 | [`src/bin/`](../src/bin/) | Project helper scripts and the locally downloaded Buildx executable. |

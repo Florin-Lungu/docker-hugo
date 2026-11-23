@@ -39,6 +39,9 @@ This release is available from Docker Hub as project `floryn90/hugo` with the fo
 | `pandoc`                     | `NEXT-pandoc`                              |
 | `pandoc-ci`                  | `NEXT-pandoc-ci`                           |
 | `pandoc-onbuild`             | `NEXT-pandoc-onbuild`                      |
+| `sass`                       | `NEXT-sass`                                |
+| `sass-ci`                    | `NEXT-sass-ci`                             |
+| `sass-onbuild`               | `NEXT-sass-onbuild`                        |
 | `ext-alpine`                 | `NEXT-ext-alpine`                          |
 | `ext-alpine-ci`              | `NEXT-ext-alpine-ci`                       |
 | `ext-alpine-onbuild`         | `NEXT-ext-alpine-onbuild`                  |

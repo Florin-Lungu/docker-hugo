@@ -41,6 +41,12 @@ IMPORT debian-ext AS ext-debian
 IMPORT ubuntu/_main
 
 #
+# Image: sass
+#
+
+IMPORT sass AS sass
+
+#
 # Image: ext-ubuntu
 #
 
