@@ -42,7 +42,7 @@ tests:
   sass:
     entrypoint: sass
     command: --embedded --version
-    expected: versionResponse
+    expected: compilerVersion
 
   defaultuser:
     entrypoint: id
